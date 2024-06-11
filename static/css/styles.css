@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-tabs li:hover, .nav-tabs li.active {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 8px;
+}
+
+#home-section, #graphs-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#home-section {
+    display: block;
+}
+
+#recommendation-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#recommendations, #network{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#network{
+    height: 400px; /* Set a fixed height for graph and chart containers */
+}
+
+#network, #graphCanvas {
+    min-width: fit-content;
+    width: fit-content;
+    height: 500px; /* Adjust height as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loading {
+    font-size: 18px;
+}
